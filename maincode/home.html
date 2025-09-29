@@ -15,8 +15,9 @@
 
 <body class="bg-[#f4f5f7] h-[100vh] ">
    <!----- Page content goes here -->
-   <!--navbar------>
-  <div class=" border-b-2 border-gray-400 p-3 flex justify-between items-center max-w-lg mx-auto">
+ <div class="max-w-lg mx-auto  bg-white rounded-b-xl"> 
+    <!--navbar------>
+  <div class=" border-b-2 border-gray-400 p-3 flex justify-between items-center ">
     <div class="flex">
       <img src="../assets/Group.png" alt="" class="h-[50px]">
       <div class="ml-5">
@@ -29,43 +30,83 @@
     </div>
   </div>
     <!--navbar end------>
-  <div class="max-w-lg mx-auto mt-8 ">
+  <div class=" mt-8 p-3 ">
     <h1 class="text-2xl font-semibold ">🔥 Welcome to Payooo!</h1>
     <p class="text-[#08080880]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
   </div>
-  <div class="border-2 border-red-500 min-h-[200px] text-center p-3 ">
-   <div class="border-2 border-green-500 " >
+  <div class=" min-h-[200px] text-center  grid grid-cols-3 gap-4 p-3 ">
+   <div class="border-2 border-gray-300 p-3 rounded-xl  " >
     <img src="../assets/wallet1.png" alt="" class="mx-auto"  >
 
     <h2  class="">Add Money</h2>
    </div>
-   <div class="border-2 border-green-500 " >
-    <img src="../assets/wallet1.png" alt="" class="mx-auto"  >
-
-    <h2  class="">Add Money</h2>
+   <div class="border-2 border-gray-300 p-3 rounded-xl " >
+    <img src="../assets/send1.png" alt="" class="mx-auto"  >
+    <h2  class="">Cash Out</h2>
    </div>
-   <div class="border-2 border-green-500 " >
-    <img src="../assets/wallet1.png" alt="" class="mx-auto"  >
 
-    <h2  class="">Add Money</h2>
+   <div class="border-2 border-gray-300 p-3 rounded-xl " >
+    <img src="../assets/money1.png" alt="" class="mx-auto"  >
+
+    <h2  class="">Transfer Money</h2>
    </div>
-   <div class="border-2 border-green-500 " >
-    <img src="../assets/wallet1.png" alt="" class="mx-auto"  >
+   <div class="border-2 border-gray-300  p-3 rounded-xl" >
+    <img src="../assets/bonus1.png" alt="" class="mx-auto"  >
 
-    <h2  class="">Add Money</h2>
+    <h2  class="">Get Bonus</h2>
    </div>
-   <div class="border-2 border-green-500 " >
-    <img src="../assets/wallet1.png" alt="" class="mx-auto"  >
+   <div class="border-2 border-gray-300 p-3 rounded-xl " >
+    <img src="../assets/purse1.png" alt="" class="mx-auto"  >
 
-    <h2  class="">Add Money</h2>
+    <h2  class="">Pay Bill</h2>
    </div>
-   <div class="border-2 border-green-500 " >
-    <img src="../assets/wallet1.png" alt="" class="mx-auto"  >
+   <div class="border-2 border-gray-300 p-3 rounded-xl " >
+    <img src="../assets/transaction1.png" alt="" class="mx-auto"  >
 
-    <h2  class="">Add Money</h2>
+    <h2  class="">Transactions</h2>
    </div>
   
    
   </div>
+</div> 
+
+<div  class="all-form-sections max-w-lg mx-auto">
+    <!--Add Money-->
+    <div>
+        <h1 class="my-5 font-bold">Add Money</h1>
+        <form action="" class="bg-white rounded-2xl p-8">
+        <div class="mb-3">
+            <h1 class="font-semibold">Select a bank </h1>
+            <select class="select  bg-[#f4f5f7] mt-3 rounded-3xl w-full">
+             <option disabled selected>Select A Bank</option>
+             <option>Sonali Bank</option>
+             <option>Rupali Bank</option>
+             <option>bank Asia</option>
+            </select>
+
+        </div>
+
+
+        <div>
+            <label class="font-semibold">Bank Account Number </label>
+            <br>
+            <input type="text" placeholder="Enter 11 digit account Number" id="Bank-acc-num"class="input bg-[#f4f5f7] mt-3 rounded-3xl w-full">
+        </div>
+        <div class="mt-3">
+            <label class="font-semibold">Amount to Add</label>
+            <br>
+            <input type="text" placeholder="Add amount to withdraw" id="amount-num"class="input bg-[#f4f5f7] mt-3 rounded-3xl w-full">
+        
+        </div>
+        <div class="mt-3">
+            <label class="font-semibold">Pin Number </label>
+            <br>
+            <input type="text" placeholder="Enter 4 Digit Pin Number" id="pin-num"class="input bg-[#f4f5f7] mt-3 rounded-3xl w-full">
+        
+        </div>
+        <button  id = "AddMoneyBtn"class="btn bg-[#0874F2] text-white  mt-3 rounded-3xl w-full">Add Money</button>
+    </form>
+    </div>
+</div>
 </body>
 </html>
